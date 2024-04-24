@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+
+    experimental: {
+        webVitalsAttribution: ['CLS', 'LCP', 'FID', 'TTFB', 'INP']
+      }
+
+};
 
 export default nextConfig;
